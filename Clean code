@@ -1,0 +1,55 @@
+## Example 1:
+
+## Spaghetti code
+
+def calculate_average(numbers):
+    total = 0
+    for number in numbers:
+        if number < 0:
+            continue
+        total += number
+    if len(numbers) == 0:
+        average = 0
+    else:
+        average = total / len(numbers)
+    return average
+
+## clean code
+
+def calculate_average(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    average = total / len(numbers)
+    return average
+
+##-----------------------------------------------------------------
+
+## Example 2:
+
+## Spaghetti code
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result = result * i
+    print("The factorial of", n, "is", result)
+
+# Example usage
+factorial(5)
+
+##--------------
+
+## clean code
+
+def calculate_average(numbers):
+    total = 0
+    for number in numbers:
+        if number < 0:
+            continue
+        total += number
+    if len(numbers) == 0:
+        average = 0
+    else:
+        average = total / len(numbers)
+    return average
